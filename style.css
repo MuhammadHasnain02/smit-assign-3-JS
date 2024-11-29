@@ -1,0 +1,15 @@
+body{
+    font-family: Arial;
+}
+label{
+    display: inline-block;
+    width: 220px;
+}
+div>.table{
+    border: 1px groove black;
+    padding: 2px;
+}
+.table th{
+    border: 1px groove black;
+    padding: 8px;
+}

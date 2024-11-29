@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<label>1. Total Number Of English : </label><input type="number" id="tot-english"><br><br>
+<label>Obtained Number Of English : </label><input type="number" id="obt-english">
+
+<br><br><br>
+
+<label>2. Total Number Of Urdu : </label><input type="number" id="tot-urdu"><br><br>
+<label>Obtained Number Of Urdu : </label><input type="number" id="obt-urdu">
+
+<br><br><br>
+
+<label>3. Total Number Of Math : </label><input type="number" id="tot-Math"><br><br>
+<label>Obtained Number Of Math : </label><input type="number" id="obt-Math">
+
+<br><br>
+
+<button id="btn-check" onclick="obt_eng(),tot_eng(),obt_urdu(),tot_urdu(),obt_Math(),tot_Math(),obt_total(),tot_total()">Check</button>
+<br><br>
+
+
+<div id="div-table">
+    <table class="table">
+        
+        <tr>
+            <th>Subject</th>
+            <th>Obtained Marks</th>
+            <th>Total Marks</th>
+        </tr>
+        <tr>
+            <th>English</th>
+            <th id="obt-mark1"></th>
+            <th id="tot-mark11"></th>
+        </tr>
+        <tr>
+            <th>Urdu</th>
+            <th id="obt-mark2"></th>
+            <th id="tot-mark22"></th>
+        </tr>
+        <tr>
+            <th>Math</th>
+            <th id="obt-mark3"></th>
+            <th id="tot-mark33"></th>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <th id="obt-total"></th>
+            <th id="tot-total"></th>
+        </tr>
+        <tr>
+            <th>Percentage</th>
+            <th colspan="2"></th>
+        </tr>
+        <tr>
+            <th>Grade</th>
+            <th colspan="2"></th>
+        </tr>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
