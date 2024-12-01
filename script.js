@@ -1,44 +1,84 @@
-// ENGLISH
-function obt_eng(){
-    let value1 = document.getElementById("obt-english").value
-    document.getElementById("obt-mark1").innerText = value1
-}
-function tot_eng(){
-    let value11 = document.getElementById("tot-english").value
-    document.getElementById("tot-mark11").innerText = value11
-}
-// URDU
-function obt_urdu(){
-    let value2 = document.getElementById("obt-urdu").value
-    document.getElementById("obt-mark2").innerText = value2
-}
-function tot_urdu(){
-    let value22 = document.getElementById("tot-urdu").value
-    document.getElementById("tot-mark22").innerText = value22
-}
-// MATH
-function obt_Math(){
-    let value3 = document.getElementById("obt-Math").value
-    document.getElementById("obt-mark3").innerText = value3
-}
-function tot_Math(){
-    let value33 = document.getElementById("tot-Math").value
-    document.getElementById("tot-mark33").innerText = value33
-}
-// TOTAL
-function obt_total(){
-    let value1 = document.getElementById("obt-english").value
-    let value2 = document.getElementById("obt-urdu").value
-    let value3 = document.getElementById("obt-Math").value
+function check(){
+
+        // GET VALUES
+    let totenglishmark = Number(document.getElementById("totenglish").value)
+    let obtenglishmark = Number(document.getElementById("obtenglish").value)
+
+    let toturdumark = Number(document.getElementById("toturdu").value)
+    let obturdumark = Number(document.getElementById("obturdu").value)
+
+    let totmathmark = Number(document.getElementById("totMath").value)
+    let obtmathmark = Number(document.getElementById("obtMath").value)
+
+    let totislamark = Number(document.getElementById("totMath").value)
+    let obtislamark = Number(document.getElementById("obtMath").value)
+
+        // PRINT VALUES
+    document.getElementById("obtmark1").innerText = obtenglishmark
+    document.getElementById("totmark11").innerText = totenglishmark
+
+    document.getElementById("obtmark2").innerText = obturdumark
+    document.getElementById("totmark22").innerText = toturdumark
+
+    document.getElementById("obtmark3").innerText = obtmathmark
+    document.getElementById("totmark33").innerText = totmathmark
+
+    document.getElementById("obtmark4").innerText = obtislamark
+    document.getElementById("totmark44").innerText = totislamark
+
     
-    let total = value1 + value2 + value3
-    document.getElementById("obt-total").innerText = total
-}
-function tot_total(){
-    let value1 = document.getElementById("tot-english").value
-    let value2 = document.getElementById("tot-urdu").value
-    let value3 = document.getElementById("tot-Math").value
+    // TOTAL VALUES
+    let total = obtenglishmark + obturdumark + obtmathmark + obtislamark
+    document.getElementById("obttotal").innerText = total
     
-    let total = value1 + value2 + value3
-    document.getElementById("tot-total").innerText = total
+    let totall = totenglishmark + toturdumark + totmathmark + totislamark
+    document.getElementById("tottotal").innerText = totall
+    
+    //  PERCENTAGE CALCULATE
+    let perc = (total / totall) * 100
+    document.getElementById("prtperc").innerText = perc
+    
+    //  GRADE CALCULATE
+    if(perc > 90){
+        document.getElementById("prtgrad").innerText = "A+1"
+    }
+    else if(perc >= 80){
+        document.getElementById("prtgrad").innerText = "A+"
+    }
+    else if(perc >= 70){
+        document.getElementById("prtgrad").innerText = "A"
+    }
+    else if(perc >= 60){
+        document.getElementById("prtgrad").innerText = "B"
+    }
+    else{
+        document.getElementById("prtgrad").innerText = "Failed"
+    }
+
+    //  REMARKS
+
+    if(obtenglishmark < 20){
+        document.getElementById("remark111").innerText = "Fail"
+    }
+    else if(obtenglishmark >= 20){
+        document.getElementById("remark111").innerText = "Pass"
+    }
+    if(obturdumark < 20){
+        document.getElementById("remark222").innerText = "Fail"
+    }
+    else if(obturdumark >= 20){
+        document.getElementById("remark222").innerText = "Pass"
+    }
+    if(obtmathmark < 20){
+        document.getElementById("remark333").innerText = "Fail"
+    }
+    else if(obtmathmark >= 20){
+        document.getElementById("remark333").innerText = "Pass"
+    }
+    if(obtislamark < 20){
+        document.getElementById("remark444").innerText = "Fail"
+    }
+    else if(obtislamark >= 20){
+        document.getElementById("remark444").innerText = "Pass"
+    }
 }

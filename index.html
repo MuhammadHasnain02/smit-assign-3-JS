@@ -8,60 +8,78 @@
 </head>
 <body>
 
-<label>1. Total Number Of English : </label><input type="number" id="tot-english"><br><br>
-<label>Obtained Number Of English : </label><input type="number" id="obt-english">
+<label>1. Total Number Of English : </label><input type="number" id="totenglish"><br><br>
+<label>Obtained Number Of English : </label><input type="number" id="obtenglish">
 
 <br><br><br>
 
-<label>2. Total Number Of Urdu : </label><input type="number" id="tot-urdu"><br><br>
-<label>Obtained Number Of Urdu : </label><input type="number" id="obt-urdu">
+<label>2. Total Number Of Urdu : </label><input type="number" id="toturdu"><br><br>
+<label>Obtained Number Of Urdu : </label><input type="number" id="obturdu">
 
 <br><br><br>
 
-<label>3. Total Number Of Math : </label><input type="number" id="tot-Math"><br><br>
-<label>Obtained Number Of Math : </label><input type="number" id="obt-Math">
+<label>3. Total Number Of Math : </label><input type="number" id="totMath"><br><br>
+<label>Obtained Number Of Math : </label><input type="number" id="obtMath">
+
+<br><br><br>
+
+<label>4. Total Number Of Islamiat : </label><input type="number" id="totMath"><br><br>
+<label>Obtained Number Of Islamiat : </label><input type="number" id="obtMath">
 
 <br><br>
 
-<button id="btn-check" onclick="obt_eng(),tot_eng(),obt_urdu(),tot_urdu(),obt_Math(),tot_Math(),obt_total(),tot_total()">Check</button>
+<button id="btncheck" onclick="check()">Check</button>
 <br><br>
 
 
-<div id="div-table">
+<div id="divtable">
     <table class="table">
         
         <tr>
             <th>Subject</th>
             <th>Obtained Marks</th>
             <th>Total Marks</th>
+            <th>Remarks</th>
         </tr>
         <tr>
             <th>English</th>
-            <th id="obt-mark1"></th>
-            <th id="tot-mark11"></th>
+            <th id="obtmark1"></th>
+            <th id="totmark11"></th>
+            <th id="remark111"></th>
         </tr>
         <tr>
             <th>Urdu</th>
-            <th id="obt-mark2"></th>
-            <th id="tot-mark22"></th>
+            <th id="obtmark2"></th>
+            <th id="totmark22"></th>
+            <th id="remark222"></th>
         </tr>
         <tr>
             <th>Math</th>
-            <th id="obt-mark3"></th>
-            <th id="tot-mark33"></th>
+            <th id="obtmark3"></th>
+            <th id="totmark33"></th>
+            <th id="remark333"></th>
+        </tr>
+        <tr>
+            <th>Islamiat</th>
+            <th id="obtmark4"></th>
+            <th id="totmark44"></th>
+            <th id="remark444"></th>
         </tr>
         <tr>
             <th>Total</th>
-            <th id="obt-total"></th>
-            <th id="tot-total"></th>
+            <th id="obttotal"></th>
+            <th id="tottotal"></th>
+            <th>- - -</th>
         </tr>
         <tr>
             <th>Percentage</th>
-            <th colspan="2"></th>
+            <th id="prtperc" colspan="2"></th>
+            <th>- - -</th>
         </tr>
         <tr>
             <th>Grade</th>
-            <th colspan="2"></th>
+            <th id="prtgrad" colspan="2"></th>
+            <th>- - -</th>
         </tr>
     </table>
 </div>
