@@ -10,8 +10,8 @@ function check(){
     let totmathmark = Number(document.getElementById("totMath").value)
     let obtmathmark = Number(document.getElementById("obtMath").value)
 
-    let totislamark = Number(document.getElementById("totMath").value)
-    let obtislamark = Number(document.getElementById("obtMath").value)
+    let totislamark = Number(document.getElementById("totisla").value)
+    let obtislamark = Number(document.getElementById("obtisla").value)
 
         // PRINT VALUES
     document.getElementById("obtmark1").innerText = obtenglishmark
