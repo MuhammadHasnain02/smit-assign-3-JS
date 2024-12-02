@@ -1,9 +1,15 @@
 body{
     font-family: Arial;
+    color: silver;
+    background-image: linear-gradient(to right,rgb(7, 121, 102),rgb(6, 116, 143));
 }
 label{
     display: inline-block;
     width: 220px;
+}
+.inp{
+    padding: 3px;
+    border-radius: 5px;
 }
 div>.table{
     border: 1px groove black;
@@ -11,5 +17,20 @@ div>.table{
 }
 .table th{
     border: 1px groove black;
-    padding: 8px;
+    padding: 7.9px;
+}
+
+#btncheck{
+    width: 90px;
+    height: 30px;
+    margin-left: 150px;
+    color: white;
+    background-color: rgb(6, 116, 143);
+    border-radius: 10px;
+}
+#btncheck:hover{
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.2);
+    background-color: rgb(7, 121, 102);
 }

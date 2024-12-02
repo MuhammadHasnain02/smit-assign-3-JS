@@ -51,6 +51,9 @@ function check(){
     else if(perc >= 60){
         document.getElementById("prtgrad").innerText = "B"
     }
+    else if(perc >= 50){
+        document.getElementById("prtgrad").innerText = "C"
+    }
     else{
         document.getElementById("prtgrad").innerText = "Failed"
     }
